@@ -1,3 +1,4 @@
+#1.uzd
 import random
 
 lielaka_summa = 0
@@ -16,3 +17,22 @@ for i in range(10):
        lielaka_summa = dice1+dice2 
     
 print(lielaka_summa)
+
+#2.uzd
+input random
+answer = random.randrange(1, 11)
+chance = 0
+while chance < 2:
+    guess = int(input("Guess number between 1 and 10: "))
+    
+    if guess == answer:
+        print("Uzminēts!")
+    if guess < answer :
+        print("Augstāks!")
+    if guess > answer:
+        print("Zemāks")
+        
+        chance += 1
+    if chance == 2:
+        print("Spēle peigusies. atbilde bija:", answer)
+        
