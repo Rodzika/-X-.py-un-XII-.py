@@ -22,7 +22,7 @@ print(lielaka_summa)
 input random
 answer = random.randrange(1, 11)
 chance = 0
-while chance < 2:
+while chance < 5:
     guess = int(input("Guess number between 1 and 10: "))
     
     if guess == answer:
@@ -33,6 +33,6 @@ while chance < 2:
         print("Zemāks")
         
         chance += 1
-    if chance == 2:
+    if chance == 5:
         print("Spēle peigusies. atbilde bija:", answer)
         
